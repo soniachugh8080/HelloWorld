@@ -1,8 +1,7 @@
 package main
 
 // Add two numbers and return the results
-func Add(a, b int) int 
-{
+func Add(a, b int) int {
 //addition:
 	return a + b
 }
