@@ -24,22 +24,7 @@ jobs:
           # Read file contents as body:
           body: file://README.md
           to: chugh.soniaj@gmail.com
-          from: Sonia Chugh # <chugh.soniaj@gmail.com>
-          content_type: text/html
-       - uses: actions/checkout@master
-       - name: whatsapp-notify
-        id: whatsapp-notify
-        env:
-          account_sid: ${{ secrets.account_sid }}
-          auth_token: ${{ secrets.auth_token }}
-          to_whatsapp_no: ${{ secrets.to_whatsapp_no }}
-
-
-        uses: ishween/whatsapp-push-notify-action@master
-      
-        - name : Run
-        run: |
-          echo 'Start!'						
+          from: Sonia Chugh # <chugh.soniaj@gmail.com>		
        - name: Validates GO releaser config
         uses: docker://goreleaser/goreleaser:latest
         with:
