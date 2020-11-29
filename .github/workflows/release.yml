@@ -25,6 +25,7 @@ jobs:
           body: file://README.md
           to: chugh.soniaj@gmail.com
           from: Sonia Chugh # <chugh.soniaj@gmail.com>		
+      
        - name: Validates GO releaser config
         uses: docker://goreleaser/goreleaser:latest
         with:
