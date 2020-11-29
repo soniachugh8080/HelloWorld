@@ -25,13 +25,11 @@ jobs:
           body: file://README.md
           to: chugh.soniaj@gmail.com
           from: Sonia Chugh # <chugh.soniaj@gmail.com>
-    # Optional content type (defaults to text/plain):
-    content_type: text/html					
+          content_type: text/html					
       - name: Validates GO releaser config
         uses: docker://goreleaser/goreleaser:latest
         with:
           args: check
-
       - name: Create release on GitHub
         uses: docker://goreleaser/goreleaser:latest
         with:
