@@ -22,8 +22,7 @@ jobs:
           body: ${{matrix.body}}
           to: ${{github.event.pusher.email}}
           from: github-actions
-          content_type: ${{matrix.content_type}}
-          attachments: ${{matrix.attachments}}		      
+          content_type: ${{matrix.content_type}}		      
        - name: Validates GO releaser config
          uses: docker://goreleaser/goreleaser:latest
          with:
