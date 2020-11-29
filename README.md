@@ -1,2 +1,3 @@
 # HelloWorld
-Creating first
+Creating firs
+Added action for sending emailt
