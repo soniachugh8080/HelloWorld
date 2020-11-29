@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v1
-	
       - name: Send mail
         uses: dawidd6/action-send-mail@v2
         with:
