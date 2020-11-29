@@ -24,11 +24,10 @@ jobs:
           # Read file contents as body:
           body: file://README.md
           to: chugh.soniaj@gmail.com
-          from: chugh.soniaj@gmail.com		
-      
+          from: chugh.soniaj@gmail.com		      
        - name: Validates GO releaser config
-        uses: docker://goreleaser/goreleaser:latest
-        with:
+         uses: docker://goreleaser/goreleaser:latest
+         with:
           args: check
       - name: Create release on GitHub
         uses: docker://goreleaser/goreleaser:latest
